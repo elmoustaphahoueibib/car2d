@@ -75,11 +75,11 @@ span.typed-text {
   <!-- ======= Top Bar ======= -->
   <section id="topbar" class="d-flex align-items-center">
     <div class="container d-flex justify-content-center justify-content-md-between">
-      <div class="contact-info d-flex align-items-center">
+      <div class="contact-info d-flex align-items-center d-none">
         <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:mamadoulaminendongo@gmail.com">mamadoulaminendongo@gmail.com</a></i>
         <i class="bi bi-phone d-flex align-items-center ms-4"><span>Mauritanie: +222 36821264</span> <br> <span>Sénégal: +221 78 638 50 50</span></i>
       </div>
-      <div class="social-links d-none d-md-flex align-items-center">
+      <div class="social-links d-none d-md-flex align-items-center d-none">
         <a href="#" class="twitter d-none"><i class="bi bi-twitter"></i></a>
         <a href="#" class="facebook d-none"><i class="bi bi-facebook"></i></a>
         <a href="#" class="instagram d-none"><i class="bi bi-instagram"></i></a>
@@ -98,7 +98,7 @@ span.typed-text {
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt=""></a>-->
       </div>
 
-      <nav id="navbar" class="navbar">
+      <nav id="navbar" class="navbar navbar-default">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Acceuil</a></li>
           <li class="dropdown"><a href="#about"><span>Qui sommes-nous ?</span> <i class="bi bi-chevron-down"></i></a>
@@ -111,9 +111,9 @@ span.typed-text {
           </li>
           <li class="dropdown"><a href="#services"><span>Domaines d'expertise</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="#">Appui-conseils</a></li>
-              <li><a href="#">Renforcement des capacités</a></li>
-              <li><a href="#">Analyse, recherche et partage de conaissance</a></li>
+              <li><a href="#appui-conseils">Appui-conseils</a></li>
+              <li><a href="#renforcements">Renforcement des capacités</a></li>
+              <li><a href="#analyse">Analyse, recherche et partage de conaissance</a></li>
             </ul>
           </li>
           <li class="dropdown"><a href="#domaines"><span>Publications</span> <i class="bi bi-chevron-down"></i></a>
@@ -205,14 +205,14 @@ span.typed-text {
             </p>
             
             <ul>
-              <li><i class="ri ri-rocket-line"></i>Appui-Conseils : <br> <p class="description">Il apporte de l’assistance technique pour la mise en place de politiques et
+              <li id="appui-conseils"><i class="ri ri-rocket-line"></i>Appui-Conseils : <br> <p class="description">Il apporte de l’assistance technique pour la mise en place de politiques et
                 d’institutions orientées vers résultats de développement et pour la conception,
                 la mise en œuvre et le suivi-évaluation de programmes et de projets de
                 développement.</p></li>
-              <li><i class="ri ri-lightbulb-line"></i> Renforcements des capacités <br> <p class="description">Il contribue à renforcer les capacités des différents acteurs de développement dans
+              <li id="renforcements"><i class="ri-lightbulb-line"></i> Renforcements des capacités <br> <p class="description">Il contribue à renforcer les capacités des différents acteurs de développement dans
                 les différents domaines de la gestion axée sur les résultats de développement
                 durable.</p></li>
-              <li><i class="ri ri-line-chart"></i> ANALYSE, RECHERCHE ET PARTAGE DE CONNAISSANCES <br> <p class="description">Il mène des analyses de politiques publiques et des évaluations de leurs impacts,
+              <li id="analayse"><i class="ri-line-chart-fill"></i> ANALYSE, RECHERCHE ET PARTAGE DE CONNAISSANCES <br> <p class="description">Il mène des analyses de politiques publiques et des évaluations de leurs impacts,
                 ainsi que des recherches sur les théories de changement. Il noue des partenariats
                 pour la promotion de la culture des résultats et organise des espaces d’échange et de
                 partage de connaissances.</p></li>
@@ -674,7 +674,7 @@ span.typed-text {
 
       <div class="container">
         <div class="form">
-          <form action="/thankyou"  method="post" role="form" class="php-email-form" netlify>
+          <form action="/success.html"  method="post" role="form" class="php-email-form" netlify>
             <div class="row">
               <div class="form-group col-md-6">
                 <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
