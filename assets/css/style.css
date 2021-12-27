@@ -558,11 +558,6 @@ section {
 --------------------------------*/
 #services {
   padding: 40px 0;
-  background-image: url(../img/hero-carousel/p3_12.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 3;
 }
 #services .box {
   padding: 40px;
